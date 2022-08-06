@@ -22,10 +22,17 @@ export default function Stats() {
   ]
 
   return (
-    <div className="grid gap-4 grid-cols-3 ">
-      {stats.map(stat => (
-        <StatCard key={stat.id} header={stat.header} value={stat.value} />
-      ))}
+    <div>
+      <h1 className="text-2xl font-bold">Stats</h1>
+      <div className=" bg-gray-100 h-1/4 rounded-md p-2.5 ">
+        <h5 className="text-gray-700">Last 30 days</h5>
+
+        <div className="flex flex-row">
+          {stats.map(stat => (
+            <StatCard key={stat.id} header={stat.header} value={stat.value} />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
