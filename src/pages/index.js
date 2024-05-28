@@ -1,11 +1,12 @@
 import React from "react"
 import Stats from "../components/DataDisplay/Stats"
+import ImageDetails from "../components/lists/GridLists/ImageDetails";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 max-w-full p-10">
-      <h3 className="text-sm font-medium  ">Last 30 days</h3>
+    <div className="md:container mx-auto bg-white max-w-full">
       <Stats />
+      <ImageDetails />
     </div>
   )
 }
